@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>f1un</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header & Logo Section */
+        header {
+            font-family: 'Brush Script MT', cursive;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            background: #f8f8f8;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logo {
+            font-weight: bold;
+            color: #000000; /* Matching your purple/pink "Logo" text */
+            font-size: 1.5rem;
+        }
+
+        /* Rolling Display (Marquee effect) */
+        .scrolling-text-container {
+            flex-grow: 1;
+            margin: 0 40px;
+            overflow: hidden;
+            white-space: nowrap;
+            color: #FF1801; /* Matching your blue ink */
+            font-style: bold;
+        }
+
+        .scrolling-text {
+            display: inline-block;
+            animation: scroll-left 30s linear infinite;
+        }
+
+        @keyframes scroll-left {
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
+        }
+
+        .hamburger-menu {
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Content Sections */
+        main {
+            padding: 40px 5%;
+            background: #f9f9f9;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            border-left: 5px solid #000000; /* Yellow line accent from your drawing */
+            padding-left: 15px;
+            margin-bottom: 25px;
+        }
+
+        /* Memes of the Week Grid */
+        .meme-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+
+        .meme-card {
+            background: #fff;
+            padding: 20px;
+            border: 2px dashed #ccc;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .placeholder-img {
+            background: #eee;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            border-radius: 4px;
+            color: #888;
+        }
+
+        /* Blogs Section */
+        .blog-list {
+            display: flex;
+            gap: 25px;
+            overflow-x: auto;
+            padding-bottom: 20px;
+        }
+
+        .blog-card {
+            min-width: 250px;
+            height: 300px;
+            background: white;
+            border: 2px solid #333;
+            border-radius: 12px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        /* Footer / Contact */
+        footer {
+            background: #333;
+            color: white;
+            padding: 40px 5%;
+            text-align: center;
+        }
+
+        .contact-info {
+            font-size: 1.2rem;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    	<header>
+        <div class="logo">f1un</div>
+        <div class="scrolling-text-container">
+            <div class="scrolling-text">"You can call me chucky." - Max Verstappen • Important News: KI KI KI AY • Latest Updates: "It's <i>near</i> a fish" • "I am stupid. I am stupid." - Every ferrari fan ever.</div>
+        </div>
+        <div class="hamburger-menu">☰</div>
+    </header>
+
+    <main>
+        <section>
+            <h2>&#x2728; Drivers of the week &#x2728;</h2> <!-- CAN CHANGE EVERY WEEK? MAYBE> COULD BE BUZZ OF THE WEEK/MONTH -->
+            <div class="meme-grid">
+                <!-- Pics of each driver. Link to their driver profiles
+                 that page is their performance in f2 or any of the junior series they participated in right before f1.
+                 -->
+                <div class="meme-card">
+                    Kimi Antonelli    
+                <div>img</div>
+                </div>
+                <div class="meme-card">
+                    Lando Norris
+                    <div>img</div>
+                </div>
+                <div class="meme-card">
+                    Esteban Ocon
+                    <div>img</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section>
+            <h2>Blogs of mine</h2>
+            <div class="blog-list">
+                <div class="blog-card">
+                    <p>Thumbnail as link to <strong>blog 1</strong></p>
+                </div>
+                <div class="blog-card">
+                    <p>Thumbnail as link to <strong>blog 2</strong></p>
+                </div>
+                <div class="blog-card">
+                    <p>Thumbnail as link to <strong>blog 3</strong></p>
+                </div>
+            </div>
+        </section> -->
+    </main>
+
+    <footer>
+        <div class="contact-info">Contact info</div>
+        <p style="margin-top: 20px; opacity: 0.6;">© 2024 My Website</p>
+    </footer>
+
+</body>
+</html>
